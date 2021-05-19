@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+<head>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <meta charset="utf-8">
+  <title>Arbre de Décision</title>
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark	">
+    <div class="container">
+      <a class="navbar-brand" href="#page">Arbre de Décision</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#treso">Trésorerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rent">Rentabilité</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sig">SIG</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container"  id="page">
+    <div class="container" style="margin-top:100px;" id="treso">
+      <div class="card border-dark" >
+        <div class="card-header">Trésorerie</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Analyse du fond de roulement de l'entreprise</h5>
+          <p class="card-text">Cliquer sur l'état de votre Trésorerie</p>
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+              Négative
+            </button>
+          </p>
+          <div class="collapse mb-3" id="collapseExample1">
+            <div class="card card-body">
+              Augmenter le fond de roulement :
+              <lu>
+                <li>
+                  Solliciter les actionnaires : Pas d'echeance de remboursement mais Necessite un accroissement de dividende pour etre attractif
+                </li>
+                <li>
+                  Emprunter à long terme : Echéances étalés sur le temps, cela permet de lisser notre trésorerie mais frais important et taux dentettement fini
+                </li>
+                <li>
+                  Mobiliser les créances clients : Pas de frais et pas d'appel à une tierce personne mais dépendant de l'état de compte du client (qui peut lui aussi avoir besoin de trésorie)
+                </li>
+              </lu>
+              Diminuer le besoin en fond de roulement :
+              <lu>
+                <li>
+                  Reduire les stocks : Charges lié au stockage réduit mais il faut garder un stock suffisant pour repondre à la demande client
+                </li>
+                <li>
+                  Reduire le delai client
+                </li>
+                <li>
+                  Repousser les échéances de paiements
+                </li>
+              </lu>
+            </div>
+          </div>
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+              Positive
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample2">
+
+            <div class="btn-group-vertical">
+              <div class="card card-body">
+                <lu>
+                  <li>
+                    Continuer à augmenter le FR et diminuer le BFR (voir ci-dessus) <i class="fas fa-camera-retro"></i>
+                  </li>
+                  <li>
+                    Investissement <i data-bs-toggle="popover" data-bs-placement="right" title="En savoir plus" data-bs-content="Investir dans quelque chose de rentable (critère financier, organisation etc.)" class="bi bi-box-arrow-in-up-right"></i>
+                  </li>
+                  <li>
+                    Placements à court termes de l'excédant <i data-bs-toggle="popover" data-bs-placement="right" title="En savoir plus" data-bs-content="Placement qui rapport de l'argent" class="bi bi-three-dots"></i>
+
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5" id="rent">
+          <div class="card border-dark" >
+            <div class="card-header">Rentabilité</div>
+            <div class="card-body text-dark">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="collapseExample">
+                  Marge sur cout variable (CA - CV)
+                </button>
+              </p>
+              <div class="collapse" id="">
+              </div>
+              <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="collapseExample">
+                  Résultat exploitation (MCV - CF)
+                </button>
+              </p>
+              <div class="collapse" id="">
+              </div>
+              <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="collapseExample">
+                  Seuil de renta (CA*CF / MCV)
+                </button>
+              </p>
+              <div class="collapse" id="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5" id="sig">
+          <div class="card border-dark" >
+            <div class="card-header">SIG</div>
+            <div class="card-body text-dark">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="collapseExample">
+                  Marges commercial
+                </button>
+              </p>
+              <div class="collapse" id="Marges commercial">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })</script>
+
+
+
+    </body>
+    </html>
