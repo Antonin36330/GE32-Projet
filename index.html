@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <meta charset="utf-8">
   <title>Arbre de Décision</title>
+  <link rel="shortcut icon" type="image/jpg" href="icons8-finance-document-100.png"/>
 </head>
 <body>
 
+  <!--  _______________________________________________NAVBAR ___________________________________ -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark	">
     <div class="container">
       <a class="navbar-brand" href="#page">Arbre de Décision</a>
@@ -28,13 +30,28 @@
           <li class="nav-item">
             <a class="nav-link" href="#sig">SIG</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipe">Equipe</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container"  id="page">
-    <div class="container" style="margin-top:100px;" id="treso">
+
+  <div style="margin-top:100px;" class="container"  id="page">
+    <!--  _______________________________________________INTRO ___________________________________ -->
+
+    <div class="card border-dark mb-3" style="max-width: 25rem;">
+      <div class="card-header">Introduction</div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">Bienvenue sur notre outil d'analyse financière et d'aide à la décision</h5>
+        <p class="card-text">Expliquer le fonctionnemenent (outil dynamique + en ligne + ...?)</p>
+      </div>
+    </div>
+
+    <!--  _______________________________________________TRESORERIE ___________________________________ -->
+    <div  id="treso">
       <div class="card border-dark" >
         <div class="card-header">Trésorerie</div>
         <div class="card-body text-dark">
@@ -99,7 +116,7 @@
           </div>
         </div>
 
-        <div class="container mt-5" id="rent">
+        <div class="mt-5" id="rent">
           <div class="card border-dark" >
             <div class="card-header">Rentabilité</div>
             <div class="card-body text-dark">
@@ -130,7 +147,7 @@
           </div>
         </div>
 
-        <div class="container mt-5" id="sig">
+        <div class=" mt-5" id="sig">
           <div class="card border-dark" >
             <div class="card-header">SIG</div>
             <div class="card-body text-dark">
@@ -147,6 +164,31 @@
           </div>
         </div>
 
+      </div>
+      <!--  _______________________________________________EQUIPE ___________________________________ -->
+<h1 class="mt-5">Equipe</h1>
+  <div class="card-group m-3" id="equipe">
+        <div class="card">
+          <img src="IMG_2642.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Augustin Lacroix</h5>
+            <p class="card-text">bla bla bla...</p>
+            </div>
+        </div>
+        <div class="card">
+          <img src="IMG_2642.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jean Baptiste Baclet</h5>
+            <p class="card-text">bla bla bla...</p>
+            </div>
+        </div>
+        <div class="card">
+          <img src="IMG_2642.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Antonin Marcon</h5>
+            <p class="card-text">bla bla bla...</p>
+            </div>
+        </div>
       </div>
 
       <script>
