@@ -33,6 +33,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#equipe">Equipe</a>
           </li>
+          <li>
+            <a class="nav-link" href="#emprunt">Calcul d'emprunt</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -68,24 +71,62 @@
               <lu>
                 <li>
                   Solliciter les actionnaires : Pas d'echeance de remboursement mais Necessite un accroissement de dividende pour etre attractif
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Privilégier l'investissement par les actionnaires plutôt qu'un emprunt et/ou de faire le bon choix d'offre de prêt (cf partie choix de financement)
+                  " class="bi bi-three-dots"></i>
                 </li>
                 <li>
-                  Emprunter à long terme : Echéances étalés sur le temps, cela permet de lisser notre trésorerie mais frais important et taux dentettement fini
+                  Emprunter à long terme : Echéances étalés sur le temps, cela permet de lisser votre trésorerie mais frais important et taux dentettement fini
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Privilégier l'investissement par les actionnaires plutôt qu'un emprunt et/ou de faire le bon choix d'offre de prêt (cf partie choix de financement)
+                  " class="bi bi-three-dots"></i>
                 </li>
                 <li>
                   Mobiliser les créances clients : Pas de frais et pas d'appel à une tierce personne mais dépendant de l'état de compte du client (qui peut lui aussi avoir besoin de trésorie)
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Dans la mesure du possible, il est optimal de réduire le délais de payement des clients et d'augmenter le délais de payement des fournisseurs
+                  " class="bi bi-three-dots"></i>
+                </li>
+                <li>
+                  Réduire le délai de paiement client : Pas de frais mais dépendant du client
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Dans la mesure du possible, il est optimal de réduire le délais de payement des clients et d'augmenter le délais de payement des fournisseurs
+                  " class="bi bi-three-dots"></i>
+                </li>
+                <li>
+                  Obtenir un découvert ou avance bancaire :Garanties par la banque mais frais, et être en capacité de faire la demande
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Prévenir le plus tôt possible la banque pour adapter au mieux la situation de besoin de trésorie
+                  " class="bi bi-three-dots"></i>
+                </li>
+                <li>
+                  Demande des réglements par effets de commerce à ces clients : Garanties importantes (banque), coût limité et souplesse d'obtention mais Frais / Montants et durées de crédit non flexibles
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Demander un paiement par effet de commerce pour les clients ne pouvant pas faire de réglement durant la période ou vous avez besoin de tréso "
+                  class="bi bi-three-dots"></i>
                 </li>
               </lu>
+              <br />
               Diminuer le besoin en fond de roulement :
               <lu>
                 <li>
-                  Reduire les stocks : Charges lié au stockage réduit mais il faut garder un stock suffisant pour repondre à la demande client
+                  Reduire les stocks : Charges liées au stockage réduit mais il faut garder un stock suffisant pour repondre à la demande client
                 </li>
                 <li>
                   Reduire le delai client
                 </li>
                 <li>
                   Repousser les échéances de paiements
+                </li>
+                <li>
+                  Renégocier les conditions de paiement avec les fournisseurs
+                </li>
+                <li>
+                  Augmenter les dettes fournisseurs
+                </li>
+                <li>
+                  Investir dans quelque chose de rentable (critère financier, organisation etc.)
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Faire le bon choix de financement, et le choix d'investissement le plus optimal pour l'entreprise "
+                  class="bi bi-three-dots"></i>
+                </li>
+                <li>
+                  Placement qui rapport de l'argent avec taux assez faible
+                  <i data-bs-toggle="popover" data-bs-placement="right" title="Notre Conseil" data-bs-content="Privilégier les investissements long terme quand c'est possible "
+                  class="bi bi-three-dots"></i>
                 </li>
               </lu>
             </div>
@@ -104,7 +145,7 @@
                     Continuer à augmenter le FR et diminuer le BFR (voir ci-dessus) <i class="fas fa-camera-retro"></i>
                   </li>
                   <li>
-                    Investissement <i data-bs-toggle="popover" data-bs-placement="right" title="En savoir plus" data-bs-content="Investir dans quelque chose de rentable (critère financier, organisation etc.)" class="bi bi-box-arrow-in-up-right"></i>
+                    Investissement <i data-bs-toggle="popover" data-bs-placement="right" title="En savoir plus" data-bs-content="Investir dans quelque chose de rentable (critère financier, organisation etc.)" class="bi bi-three-dots"></i>
                   </li>
                   <li>
                     Placements à court termes de l'excédant <i data-bs-toggle="popover" data-bs-placement="right" title="En savoir plus" data-bs-content="Placement qui rapport de l'argent" class="bi bi-three-dots"></i>
@@ -115,7 +156,7 @@
             </div>
           </div>
         </div>
-
+        <!--  _______________________________________________RENTABILITE ___________________________________ -->
         <div class="mt-5" id="rent">
           <div class="card border-dark" >
             <div class="card-header">Rentabilité</div>
@@ -146,7 +187,7 @@
             </div>
           </div>
         </div>
-
+        <!--  _______________________________________________SIG___________________________________ -->
         <div class=" mt-5" id="sig">
           <div class="card border-dark" >
             <div class="card-header">SIG</div>
@@ -166,30 +207,40 @@
 
       </div>
       <!--  _______________________________________________EQUIPE ___________________________________ -->
-<h1 class="mt-5">Equipe</h1>
-  <div class="card-group m-3" id="equipe">
+      <h1 class="mt-5">Equipe</h1>
+      <div class="card-group m-3" id="equipe">
         <div class="card">
           <img src="IMG_2642.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Augustin Lacroix</h5>
             <p class="card-text">MTE 5, fils de Vali et fan de compta</p>
-            </div>
+          </div>
         </div>
         <div class="card">
           <img src="IMG_2642.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Jean Baptiste Baclet</h5>
             <p class="card-text">bla bla bla...</p>
-            </div>
+          </div>
         </div>
         <div class="card">
           <img src="IMG_2642.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Antonin Marcon</h5>
             <p class="card-text">bla bla bla...</p>
-            </div>
+          </div>
         </div>
       </div>
+
+      <div class="card border-dark mb-3" style="height:500px;"  id="emprunt">
+        <div class="card-header">Outil n°1</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Calcul d'emprunt</h5>
+          <iframe width=100% height=100%  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSIOY_rNX-p8MZpqFcFpwDgcrP6FNUrD31dpLMttsxT7NtBpZlz726-QG0d5kP8kA/pubhtml?gid=922121241&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+      </div>
+
+
 
       <script>
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
